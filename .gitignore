@@ -1,0 +1,154 @@
+# --- ОС и редакторы ---
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Icon?
+Desktop.ini
+
+# VS Code: храним полезные workspace-файлы, остальное игнорим
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/*.code-snippets
+
+# JetBrains / IDEA
+.idea/
+*.iml
+
+# История некоторых плагинов/редакторов
+.history/
+
+# --- Node / пакеты / логи ---
+node_modules/
+jspm_packages/
+.logs/
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+turbo.log
+report.[0-9]*.json
+
+# PID-файлы
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# --- TypeScript / сборка ---
+# ts incr build info
+.tsbuildinfo
+tsconfig.tsbuildinfo
+
+# Общие выходы сборки (в т.ч. для монореп)
+dist/
+build/
+lib/
+out/
+tmp/
+temp/
+.cache/
+.rts2_cache/
+**/dist/
+**/build/
+**/lib/
+**/out/
+
+# Исходные карты (обычно не коммитят в приложениях)
+**/*.js.map
+**/*.d.ts.map
+
+# --- Тесты и отчёты ---
+coverage/
+.nyc_output/
+*.lcov
+lcov.info
+junit.xml
+reports/
+test-results/
+/allure-report/
+/allure-results/
+
+# Playwright
+playwright-report/
+blob-report/
+test-results/
+.playwright/
+playwright/.cache/
+
+# Cypress
+cypress/screenshots/
+cypress/videos/
+cypress/downloads/
+cypress/reports/
+
+# Vitest/Jest временное
+.vitest/
+
+# --- Тулы и кэши ---
+.eslintcache
+.stylelintcache
+.prettier-cache
+
+.parcel-cache/
+.fusebox/
+.turbo/
+.nx/cache/
+
+# Vite / Storybook
+.vite/
+.storybook-static/
+storybook-static/
+
+# Yarn / PnP
+.pnp.*
+.yarn/cache/
+.yarn/unplugged/
+.yarn/build-state.yml
+.yarn/install-state.gz
+# (не игнорьте .yarn/releases и .yarn/plugins, они должны быть в репо при Yarn Berry)
+
+# npm
+.npm/
+
+# --- Фреймворки / хостинг ---
+.next/
+out/
+.nuxt/
+.output/
+.svelte-kit/
+.astro/
+.vercel/
+.netlify/
+
+# --- Окружение ---
+.env
+.env.*
+!.env.example
+!.env.sample
+!.env.template
+!.env.local.example
+!.env*.example
+!.env*.sample
+!.env*.template
+
+# --- Серверлесс/облака/локальные сервисы ---
+.serverless/
+.aws-sam/
+.firebase/
+.dynamodb/
+
+# --- Пакеты / архивы (временные) ---
+*.tgz
+*.zip
+
+# --- Опционально: локальные БД (раскомментируйте при необходимости) ---
+# *.sqlite
+# *.sqlite3
+# *.db
+# prisma/dev.db

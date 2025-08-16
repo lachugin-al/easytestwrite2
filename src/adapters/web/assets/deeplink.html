@@ -1,0 +1,13 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=2">
+</head>
+<body>
+<a id="deeplink">deeplink</a>
+<script type="text/javascript">
+  const params = new URLSearchParams(window.location.search);
+  var deeplink = document.getElementById("deeplink");
+  deeplink.href = params.get('url');
+</script>
+</body>
+</html>
